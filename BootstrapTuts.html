@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="BootstrapTuts.css" rel="stylesheet" type="text/css">
     <title>The Bootstrap</title>
 </head>
@@ -14,7 +15,8 @@
      <nav class="navbar navbar-expand-md navbar-light ">
          <div class="container-xxl">
              <a href="#intro" class="navbar-brand">
-                 <span class="fw-bold text-secondary">
+                 <span class="fw-bold text-dark">
+                    <i class="bi bi-book-half"></i>
                      Nana Kwasi Asante
                  </span>
              </a>
@@ -53,7 +55,7 @@
                 <div class="col-md-5 text-center text-md-start">
                     <h1>
                         <div class="display-2">Black-Belt</div>
-                        <div class="display-5 text-muted">Your Coding Skills</div>
+                        <div class="display-5 text-muted">Your Coding Skills.</div>
                     </h1>
                     <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     <a href="#pricing" class="btn btn-secondary btn-large">Buy Now!</a>
@@ -204,9 +206,115 @@
             </div>
         </div>
     </section>
-    <!--Navbar-->
 
+    <!--Reviews List-->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+                <p class="lead">What Users have said about the book:</p>
+            </div>
 
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">A must buy for every aspiring web dev!</h5>
+                            <p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, totam impedit, hic rerum soluta explicabo maiores aspernatur assumenda necessitatibus deleniti dolores nihil accusantium dolor obcaecati ad adipisci consectetur quibusdam nobis.</p>
+                            <small>Review By Ricky.</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Easy To Read and Understand!</h5>
+                            <p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, totam impedit, hic rerum soluta explicabo maiores aspernatur assumenda necessitatibus deleniti dolores nihil accusantium dolor obcaecati ad adipisci consectetur quibusdam nobis.</p>
+                            <small>Review By Samuel.</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">This book is the best.</h5>
+                            <p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, totam impedit, hic rerum soluta explicabo maiores aspernatur assumenda necessitatibus deleniti dolores nihil accusantium dolor obcaecati ad adipisci consectetur quibusdam nobis.</p>
+                            <small>Review By Jude.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact Form-->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the Form!</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-open-fill"></i>
+                            </span>
+                            <input type="email" class="form-control text-center" id="email" placeholder="e.g asante@example.com">
+                        </div>
+
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control text-center" id="name" placeholder="e.g Mario">
+                        </div>
+
+                        <label for="subject" class="form-label">What is your Question About?</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing Query</option>
+                                <option value="content" selected>Content Query</option>
+                                <option value="other" selected>Other Query</option>
+                            </select>
+                        </div>
+                        
+                        <!--Floating Text(Label is in the text area)-->
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control"></textarea>
+                            <label for="query">Your Query:</label>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">SUBMIT</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
